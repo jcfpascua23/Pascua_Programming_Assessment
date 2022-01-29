@@ -1,0 +1,104 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  animation-name: body-animation;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes body-animation {
+  0% {
+    background: white;
+  }
+  100% {
+    background: gray;
+  }
+}
+
+table {
+  width: 80%;
+  background: rgb(10, 59, 112);
+  border-radius: 10px;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  transform: translate(0, 0);
+  border: 5px ridge rgb(216, 165, 91);
+}
+
+table.list {
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  border: none;
+}
+
+th {
+  color: rgb(216, 165, 91);
+}
+
+td {
+  border: 1px groove;
+  text-align: left;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+tr:nth-child(even),
+table.list thread > tr {
+  background-color: rgb(204, 200, 200);
+}
+
+label {
+  color: rgb(225, 165, 91);
+  padding: 8px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 91%;
+  padding: 12px 9px;
+  margin: 8px 0;
+  display: table-cell;
+  border: 1px solid rgb(165, 161, 161);
+  border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background: #eee;
+  padding: 6px 12px;
+  margin: 15px 0 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  background: #4b99d8;
+}
+
+input[type="reset"]:hover {
+  background: #4b99d8;
+}
+
+button {
+  background: #eee;
+  padding: 6px 12px;
+  margin: 15px 0 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background: #4b99d8;
+}
